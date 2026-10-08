@@ -1,0 +1,12 @@
+   TPS  logrado      %    p50    p95     p99     máx  err chk✗  omit |    CPU api     CPU db     CPU k6 | estado
+        (req/s)          (ms)   (ms)    (ms)    (ms)                 |   prom/máx   prom/máx   prom/máx |
+  1600     1599  99.9%   0.40   0.54    1.29    57.7    0    0     0 |   34/  42%    9/  12%   46/  49% | ok
+  3200     3197  99.9%   0.39   0.58    1.89    52.3    0    0    41 |   66/  70%   18/  20%   79/  85% | ok
+  6400     6393  99.9%   0.44   0.99    3.42    42.8    0    0   102 |  145/ 154%   39/  46%  151/ 166% | ok
+ 12800    12784  99.9%   0.63   3.90    9.53    39.6    0    0   271 |  216/ 226%   78/  88%  269/ 285% | ok
+
+Segundos con alguna petición > 100 ms (t, máx ms): ninguno
+Peticiones omitidas por segundo (t, n): [(55, 41), (63, 104), (68, 38), (73, 102), (93, 23), (94, 329), (99, 9), (102, 2), (104, 49), (107, 129), (112, 64), (117, 27)]
+CPU: 100 % = 1 núcleo (Docker dispone de 8).
+
+GC (ParallelGC): 595 pausas young, 0 full; mediana 0.935 ms, p99 6.327 ms, máx 13.118 ms

@@ -1,0 +1,75 @@
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+     execution: local
+        script: /scripts/validate.js
+        output: csv (/resultados/series.csv)
+     scenarios: (100.00%) 1 scenario, 50 max VUs, 1m0s max duration (incl. graceful stop):
+              * carga_10tps: 10.00 iterations/s for 30s (maxVUs: 10-50, gracefulStop: 30s)
+carga_10tps   [   3% ] 01/10 VUs  01.0s/30s  10.00 iters/s
+carga_10tps   [   7% ] 00/10 VUs  02.0s/30s  10.00 iters/s
+carga_10tps   [  10% ] 00/10 VUs  03.0s/30s  10.00 iters/s
+carga_10tps   [  13% ] 00/10 VUs  04.0s/30s  10.00 iters/s
+carga_10tps   [  17% ] 01/10 VUs  05.0s/30s  10.00 iters/s
+carga_10tps   [  20% ] 00/10 VUs  06.0s/30s  10.00 iters/s
+carga_10tps   [  23% ] 01/10 VUs  07.0s/30s  10.00 iters/s
+carga_10tps   [  27% ] 00/10 VUs  08.0s/30s  10.00 iters/s
+carga_10tps   [  30% ] 01/10 VUs  09.0s/30s  10.00 iters/s
+carga_10tps   [  33% ] 00/10 VUs  10.0s/30s  10.00 iters/s
+carga_10tps   [  37% ] 00/10 VUs  11.0s/30s  10.00 iters/s
+carga_10tps   [  40% ] 01/10 VUs  12.0s/30s  10.00 iters/s
+carga_10tps   [  43% ] 01/10 VUs  13.0s/30s  10.00 iters/s
+carga_10tps   [  47% ] 01/10 VUs  14.0s/30s  10.00 iters/s
+carga_10tps   [  50% ] 00/10 VUs  15.0s/30s  10.00 iters/s
+carga_10tps   [  53% ] 00/10 VUs  16.0s/30s  10.00 iters/s
+carga_10tps   [  57% ] 00/10 VUs  17.0s/30s  10.00 iters/s
+carga_10tps   [  60% ] 01/10 VUs  18.0s/30s  10.00 iters/s
+carga_10tps   [  63% ] 00/10 VUs  19.0s/30s  10.00 iters/s
+carga_10tps   [  67% ] 01/10 VUs  20.0s/30s  10.00 iters/s
+carga_10tps   [  70% ] 00/10 VUs  21.0s/30s  10.00 iters/s
+carga_10tps   [  73% ] 01/10 VUs  22.0s/30s  10.00 iters/s
+carga_10tps   [  77% ] 01/10 VUs  23.0s/30s  10.00 iters/s
+carga_10tps   [  80% ] 00/10 VUs  24.0s/30s  10.00 iters/s
+carga_10tps   [  83% ] 01/10 VUs  25.0s/30s  10.00 iters/s
+carga_10tps   [  87% ] 00/10 VUs  26.0s/30s  10.00 iters/s
+carga_10tps   [  90% ] 00/10 VUs  27.0s/30s  10.00 iters/s
+carga_10tps   [  93% ] 01/10 VUs  28.0s/30s  10.00 iters/s
+carga_10tps   [  97% ] 00/10 VUs  29.0s/30s  10.00 iters/s
+carga_10tps   [ 100% ] 00/10 VUs  30.0s/30s  10.00 iters/s
+  █ THRESHOLDS 
+    checks{scenario:carga_10tps}
+    ✓ 'rate>0.999' rate=100.00%
+    dropped_iterations{scenario:carga_10tps}
+    ✓ 'count==0' count=0
+    http_req_duration{scenario:carga_10tps}
+    ✓ 'p(95)<200' p(95)=8.91ms
+    ✓ 'p(99)<500' p(99)=15.6ms
+    http_req_failed{scenario:carga_10tps}
+    ✓ 'rate<0.001' rate=0.00%
+  █ TOTAL RESULTS 
+    checks_total.......: 903     30.097192/s
+    checks_succeeded...: 100.00% 903 out of 903
+    checks_failed......: 0.00%   0 out of 903
+    ✓ status 200
+    ✓ dentro coincide con la lista
+    ✓ incluye la geocerca esperada
+    HTTP
+    http_req_duration..............: avg=4.92ms min=1.38ms med=4.39ms p(90)=7.44ms p(95)=8.91ms  p(99)=15.6ms  max=47.75ms
+      { expected_response:true }...: avg=4.92ms min=1.38ms med=4.39ms p(90)=7.44ms p(95)=8.91ms  p(99)=15.6ms  max=47.75ms
+      { scenario:carga_10tps }.....: avg=4.92ms min=1.38ms med=4.39ms p(90)=7.44ms p(95)=8.91ms  p(99)=15.6ms  max=47.75ms
+    http_req_failed................: 0.00% 0 out of 301
+      { scenario:carga_10tps }.....: 0.00% 0 out of 301
+    http_reqs......................: 301   10.032397/s
+    EXECUTION
+    dropped_iterations.............: 0     0/s
+      { scenario:carga_10tps }.....: 0     0/s
+    iteration_duration.............: avg=5.88ms min=1.56ms med=5.32ms p(90)=9.09ms p(95)=10.52ms p(99)=17.69ms max=49.22ms
+    iterations.....................: 301   10.032397/s
+    vus............................: 0     min=0        max=1 
+    vus_max........................: 10    min=10       max=10
+    NETWORK
+    data_received..................: 59 kB 2.0 kB/s
+    data_sent......................: 59 kB 2.0 kB/s
+carga_10tps ✓ [ 100% ] 00/10 VUs  30s  10.00 iters/s

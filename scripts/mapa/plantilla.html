@@ -1,0 +1,328 @@
+<title>Atlas de Geocercas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/*__LEAFLET_CSS__*/
+</style>
+<style>
+/* Layout: aplicación de dos paneles — índice de geocercas a la izquierda, mapa a la derecha; en teléfono, mapa arriba e índice debajo. */
+:root {
+  --water: #d4dfe1;
+  --land: #eceee8;
+  --state-line: #b3bcb6;
+  --paper: #f8f9f7;
+  --ink: #1b2320;
+  --muted: #5b6862;
+  --rule: #d5dbd7;
+  --fence: #b4441b;
+  --manual: #6a4c9c;
+  --hover: #eef1ee;
+  --selected: #fbeee8;
+  --font-display: "Barlow Semi Condensed", "Arial Narrow", system-ui, sans-serif;
+  --font-body: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --water: #0e1517; --land: #1c2427; --state-line: #3b4749; --paper: #141a1c; --ink: #e4ebe8;
+    --muted: #93a19b; --rule: #2b3436; --fence: #f0814d; --manual: #a98ddb; --hover: #1b2326;
+    --selected: #2e211b; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --water: #0e1517; --land: #1c2427; --state-line: #3b4749; --paper: #141a1c; --ink: #e4ebe8;
+  --muted: #93a19b; --rule: #2b3436; --fence: #f0814d; --manual: #a98ddb; --hover: #1b2326;
+  --selected: #2e211b; color-scheme: dark;
+}
+
+html, body { height: 100%; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font: 15px/1.45 var(--font-body);
+  padding-inline: 16px;
+  padding-block: 16px;
+  box-sizing: border-box;
+}
+*, *::before, *::after { box-sizing: inherit; }
+
+.app {
+  height: 100%;
+  display: grid;
+  grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
+  gap: 16px;
+}
+
+/* ---------- Índice ---------- */
+.index { display: flex; flex-direction: column; min-height: 0; min-width: 0; gap: 14px; }
+.index header { display: grid; gap: 4px; }
+.eyebrow {
+  font: 600 12px/1 var(--font-display); letter-spacing: .12em; text-transform: uppercase; color: var(--fence);
+}
+h1 {
+  margin: 0; font: 700 30px/1.05 var(--font-display); letter-spacing: -.01em; text-wrap: balance;
+}
+.summary { color: var(--muted); font-size: 14px; margin: 0; }
+.summary b { color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+.filters { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8px; }
+.filters label { display: grid; gap: 4px; font: 600 11px/1 var(--font-display); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.filters .wide { grid-column: 1 / -1; }
+input, select, button { font: inherit; color: inherit; }
+input, select {
+  width: 100%; padding: 8px 10px; border: 1px solid var(--rule); border-radius: 6px; background: var(--paper);
+  font-size: 15px; text-transform: none; letter-spacing: 0; font-family: var(--font-body); font-weight: 400; color: var(--ink);
+}
+input:focus-visible, select:focus-visible, button:focus-visible { outline: 2px solid var(--fence); outline-offset: 1px; }
+.fit {
+  align-self: end; padding: 8px 10px; border: 1px solid var(--rule); border-radius: 6px; background: transparent;
+  cursor: pointer; font-weight: 500; font-size: 14px;
+}
+.fit:hover { background: var(--hover); }
+
+.list {
+  list-style: none; margin: 0; padding: 0; overflow-y: auto; min-height: 0; flex: 1;
+  border-top: 1px solid var(--rule);
+}
+.list li { border-bottom: 1px solid var(--rule); }
+.item {
+  width: 100%; display: grid; grid-template-columns: 3.4em minmax(0, 1fr) auto; gap: 2px 10px; align-items: baseline;
+  padding: 9px 6px; border: 0; background: transparent; text-align: left; cursor: pointer;
+}
+.item:hover { background: var(--hover); }
+.item[aria-current="true"] { background: var(--selected); }
+.item .id { font: 500 12px/1.4 var(--font-mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+.item .name { font-weight: 500; overflow-wrap: anywhere; }
+.item .area { font: 400 12px/1.4 var(--font-mono); color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.item .state { grid-column: 2 / 4; font-size: 13px; color: var(--muted); display: flex; gap: 6px; align-items: center; }
+.tag {
+  font: 600 10px/1 var(--font-display); letter-spacing: .08em; text-transform: uppercase; color: var(--manual);
+  border: 1px solid currentColor; border-radius: 3px; padding: 2px 4px;
+}
+.empty { padding: 16px 6px; color: var(--muted); }
+.stamp { margin: 0; font: 400 11px/1.4 var(--font-mono); color: var(--muted); }
+
+/* ---------- Mapa ---------- */
+.map-wrap { position: relative; min-width: 0; min-height: 0; border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; }
+#map { position: absolute; inset: 0; background: var(--water); font-family: var(--font-body); }
+.leaflet-container { background: var(--water); }
+.leaflet-bar a, .leaflet-bar a:hover { background: var(--paper); color: var(--ink); border-bottom-color: var(--rule); }
+.leaflet-bar { border: 1px solid var(--rule) !important; box-shadow: none !important; }
+.leaflet-popup-content-wrapper, .leaflet-popup-tip { background: var(--paper); color: var(--ink); box-shadow: 0 2px 12px rgb(0 0 0 / .18); }
+.leaflet-popup-content-wrapper { border-radius: 8px; }
+.leaflet-popup-content { margin: 12px 14px; font: 14px/1.4 var(--font-body); min-width: 220px; }
+.leaflet-container a.leaflet-popup-close-button { color: var(--muted); }
+.leaflet-tooltip { background: var(--paper); color: var(--ink); border-color: var(--rule); font: 500 13px/1.3 var(--font-body); box-shadow: none; }
+.leaflet-tooltip-top::before { border-top-color: var(--rule); }
+
+.card h2 { margin: 0 0 2px; font: 700 19px/1.15 var(--font-display); text-wrap: balance; padding-right: 12px; }
+.card .sub { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
+.card dl { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 3px 12px; margin: 0; }
+.card dt { color: var(--muted); font-size: 12px; }
+.card dd { margin: 0; font: 400 12.5px/1.4 var(--font-mono); font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+
+.legend {
+  position: absolute; left: 10px; bottom: 10px; z-index: 500; background: var(--paper); border: 1px solid var(--rule);
+  border-radius: 6px; padding: 8px 10px; display: grid; gap: 5px; font-size: 12.5px;
+}
+.legend span { display: flex; align-items: center; gap: 8px; }
+.sw { width: 14px; height: 10px; border-radius: 2px; border: 2px solid; }
+.sw.fence { border-color: var(--fence); background: color-mix(in srgb, var(--fence) 25%, transparent); }
+.sw.manual { border-color: var(--manual); background: color-mix(in srgb, var(--manual) 25%, transparent); }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--fence); margin-inline: 3px; box-shadow: 0 0 0 1.5px var(--paper); }
+
+@media (max-width: 760px) {
+  html, body { height: auto; }
+  .app { grid-template-columns: minmax(0, 1fr); grid-template-rows: 60vh auto; height: auto; }
+  .map-wrap { order: -1; }
+  .list { max-height: 70vh; }
+  h1 { font-size: 26px; }
+}
+@media (prefers-reduced-motion: reduce) { .leaflet-zoom-anim .leaflet-zoom-animated { transition: none !important; } }
+</style>
+
+<div class="app">
+  <aside class="index">
+    <header>
+      <span class="eyebrow">Geofence API · PostGIS</span>
+      <h1>Atlas de Geocercas</h1>
+      <p class="summary" id="summary"></p>
+    </header>
+    <div class="filters">
+      <label class="wide" for="q">Buscar
+        <input id="q" type="search" placeholder="Nombre o número de geocerca" autocomplete="off">
+      </label>
+      <label for="estado">Estado
+        <select id="estado"><option value="">Todos</option></select>
+      </label>
+      <button class="fit" id="fit" type="button">Ver resultados</button>
+    </div>
+    <ul class="list" id="list"></ul>
+    <p class="stamp" id="stamp"></p>
+  </aside>
+  <section class="map-wrap" aria-label="Mapa de geocercas">
+    <div id="map"></div>
+    <div class="legend" aria-hidden="true">
+      <span><i class="sw fence"></i>Geocerca del catálogo de lugares</span>
+      <span><i class="sw manual"></i>Geocerca registrada manualmente</span>
+      <span><i class="dot"></i>Punto de referencia</span>
+    </div>
+  </section>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+const DATOS = /*__DATOS__*/null;
+
+const $ = (s) => document.querySelector(s);
+const norm = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+const fmtFecha = (iso) => new Date(iso).toLocaleString("es-MX", { dateStyle: "medium", timeStyle: "short" });
+const fmtArea = (km2) => km2 < 1 ? `${(km2 * 100).toFixed(1)} ha` : `${km2.toFixed(km2 < 10 ? 2 : 1)} km²`;
+const esc = (s) => s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+function paleta() {
+  const cs = getComputedStyle(document.documentElement);
+  const v = (n) => cs.getPropertyValue(n).trim();
+  return { land: v("--land"), line: v("--state-line"), fence: v("--fence"), manual: v("--manual"), paper: v("--paper") };
+}
+
+const map = L.map("map", { zoomSnap: 0.25, minZoom: 4, maxZoom: 18, attributionControl: false, worldCopyJump: false });
+let P = paleta();
+
+// Mapa base: límites estatales (Natural Earth, simplificados)
+const capaEstados = L.geoJSON(
+  { type: "FeatureCollection", features: DATOS.estados.map((e) => ({ type: "Feature", properties: { nombre: e.nombre }, geometry: e.geometria })) },
+  { interactive: false, style: () => ({ color: P.line, weight: 1, fillColor: P.land, fillOpacity: 1 }) }
+).addTo(map);
+map.fitBounds(capaEstados.getBounds(), { padding: [8, 8] });
+
+const capaPoligonos = L.featureGroup().addTo(map);
+const capaPuntos = L.featureGroup().addTo(map);
+const registros = DATOS.geocercas.map((g) => ({ ...g, clave: norm(`${g.nombre} ${g.id}`) }));
+let seleccion = null;
+
+function estiloPoligono(g, activo) {
+  const c = g.catalogo ? P.fence : P.manual;
+  return { color: c, weight: activo ? 3 : 1.5, fillColor: c, fillOpacity: activo ? 0.35 : 0.18 };
+}
+function estiloPunto(g, activo) {
+  const c = g.catalogo ? P.fence : P.manual;
+  return { radius: activo ? 6 : 4, color: P.paper, weight: 1.5, fillColor: c, fillOpacity: 1 };
+}
+
+function ficha(g) {
+  return `<div class="card">
+    <h2>${esc(g.nombre)}</h2>
+    <div class="sub">Geocerca #${g.id} · ${esc(g.estado)}</div>
+    <dl>
+      <dt>Área</dt><dd>${fmtArea(g.area_km2)} · ${g.vertices} vértices</dd>
+      <dt>Punto</dt><dd>${g.punto[0].toFixed(5)}, ${g.punto[1].toFixed(5)}</dd>
+      <dt>Carga</dt><dd>${fmtFecha(g.carga)}</dd>
+      <dt>Actualización</dt><dd>${fmtFecha(g.actualizacion)}</dd>
+      <dt>Origen</dt><dd>${g.catalogo ? "Catálogo de lugares" : "Registro manual"}</dd>
+    </dl></div>`;
+}
+
+for (const g of registros) {
+  g.poligono = L.geoJSON(g.geometria, { style: () => estiloPoligono(g, false) })
+    .on("click", () => seleccionar(g, false)).addTo(capaPoligonos);
+  g.marca = L.circleMarker(g.punto, estiloPunto(g, false))
+    .bindTooltip(g.nombre, { direction: "top", offset: [0, -4] })
+    .on("click", () => seleccionar(g, false)).addTo(capaPuntos);
+}
+
+// ---------- Índice ----------
+const lista = $("#list");
+for (const g of registros) {
+  const li = document.createElement("li");
+  li.innerHTML = `<button class="item" type="button">
+      <span class="id">#${g.id}</span><span class="name"></span><span class="area">${fmtArea(g.area_km2)}</span>
+      <span class="state"><span class="st"></span>${g.catalogo ? "" : '<span class="tag">manual</span>'}</span>
+    </button>`;
+  li.querySelector(".name").textContent = g.nombre;
+  li.querySelector(".st").textContent = g.estado;
+  g.boton = li.querySelector("button");
+  g.boton.addEventListener("click", () => seleccionar(g, true));
+  g.li = li;
+  lista.append(li);
+}
+const vacio = document.createElement("li");
+vacio.className = "empty";
+vacio.textContent = "Ninguna geocerca coincide. Prueba con otro nombre o elige «Todos» en Estado.";
+vacio.hidden = true;
+lista.append(vacio);
+
+const selEstado = $("#estado");
+[...new Set(registros.map((g) => g.estado))].sort((a, b) => a.localeCompare(b, "es"))
+  .forEach((e) => selEstado.add(new Option(e, e)));
+
+const totalEstados = new Set(registros.map((g) => g.estado)).size;
+$("#stamp").textContent = `Datos de la base geofence al ${DATOS.generado} (hora de la Ciudad de México)`;
+
+function visibles() { return registros.filter((g) => !g.li.hidden); }
+
+function filtrar() {
+  const q = norm($("#q").value.trim());
+  const e = selEstado.value;
+  let n = 0;
+  for (const g of registros) {
+    const ok = (!q || g.clave.includes(q)) && (!e || g.estado === e);
+    g.li.hidden = !ok;
+    if (ok) { n++; capaPoligonos.addLayer(g.poligono); capaPuntos.addLayer(g.marca); }
+    else { capaPoligonos.removeLayer(g.poligono); capaPuntos.removeLayer(g.marca); }
+  }
+  vacio.hidden = n > 0;
+  $("#summary").innerHTML = n === registros.length
+    ? `<b>${registros.length}</b> geocercas en <b>${totalEstados}</b> estados`
+    : `<b>${n}</b> de <b>${registros.length}</b> geocercas`;
+}
+
+function ajustar() {
+  const v = visibles();
+  if (!v.length) return;
+  const b = L.latLngBounds([]);
+  v.forEach((g) => b.extend(g.poligono.getBounds()));
+  map.fitBounds(b, { padding: [30, 30], maxZoom: 15 });
+}
+
+function seleccionar(g, centrar) {
+  if (seleccion && seleccion !== g) {
+    seleccion.poligono.setStyle(estiloPoligono(seleccion, false));
+    seleccion.marca.setStyle(estiloPunto(seleccion, false));
+    seleccion.boton.removeAttribute("aria-current");
+  }
+  seleccion = g;
+  g.poligono.setStyle(estiloPoligono(g, true));
+  g.marca.setStyle(estiloPunto(g, true)).bringToFront();
+  g.boton.setAttribute("aria-current", "true");
+  if (centrar) {
+    map.fitBounds(g.poligono.getBounds(), { padding: [60, 60], maxZoom: 16 });
+  } else {
+    g.boton.scrollIntoView({ block: "nearest" });
+  }
+  L.popup({ offset: [0, -4], autoPanPadding: [20, 20] }).setLatLng(g.punto).setContent(ficha(g)).openOn(map);
+  try { history.replaceState(null, "", `#g${g.id}`); } catch (_) { /* sin historial disponible */ }
+}
+
+$("#q").addEventListener("input", filtrar);
+selEstado.addEventListener("change", () => { filtrar(); ajustar(); });
+$("#fit").addEventListener("click", ajustar);
+
+// Re-colorea las capas cuando cambia el tema del visor
+function aplicarTema() {
+  P = paleta();
+  capaEstados.setStyle({ color: P.line, fillColor: P.land });
+  for (const g of registros) {
+    g.poligono.setStyle(estiloPoligono(g, g === seleccion));
+    g.marca.setStyle(estiloPunto(g, g === seleccion));
+  }
+}
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", aplicarTema);
+new MutationObserver(aplicarTema).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+
+filtrar();
+const ancla = /^#g(\d+)$/.exec(location.hash);
+const inicial = ancla && registros.find((g) => g.id === Number(ancla[1]));
+if (inicial) seleccionar(inicial, true);
+</script>

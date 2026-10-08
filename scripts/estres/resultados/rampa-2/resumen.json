@@ -1,0 +1,154 @@
+{
+    "metrics": {
+        "data_sent": {
+            "count": 127183393,
+            "rate": 1059876.0447282926
+        },
+        "dropped_iterations": {
+            "count": 917,
+            "rate": 7.6417707539524775
+        },
+        "http_req_duration": {
+            "avg": 0.8619094503138407,
+            "min": 0.012375,
+            "med": 0.466125,
+            "p(90)": 1.3905369000000005,
+            "p(95)": 2.5646207999999975,
+            "p(99)": 7.490471569999998,
+            "max": 93.429792
+        },
+        "http_req_receiving": {
+            "min": 0.00375,
+            "med": 0.012042,
+            "p(90)": 0.025709,
+            "p(95)": 0.05183344999999997,
+            "p(99)": 0.178958,
+            "max": 24.671125,
+            "avg": 0.025375144101717078
+        },
+        "http_req_tls_handshaking": {
+            "p(95)": 0,
+            "p(99)": 0,
+            "max": 0,
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "p(90)": 0
+        },
+        "http_req_connecting": {
+            "max": 10.629792,
+            "avg": 0.00018480983311758097,
+            "min": 0,
+            "med": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "p(99)": 0
+        },
+        "http_req_sending": {
+            "max": 20.883083,
+            "avg": 0.027722383333434394,
+            "min": 0.002291,
+            "med": 0.005125,
+            "p(90)": 0.01775,
+            "p(95)": 0.055916,
+            "p(99)": 0.5549403599999995
+        },
+        "http_req_blocked": {
+            "p(95)": 0.002666,
+            "p(99)": 0.006083,
+            "max": 25.9855,
+            "avg": 0.0022543276662727665,
+            "min": 0.000541,
+            "med": 0.001416,
+            "p(90)": 0.002125
+        },
+        "http_req_waiting": {
+            "avg": 0.8088119228787092,
+            "min": 0,
+            "med": 0.4385,
+            "p(90)": 1.2791628000000006,
+            "p(95)": 2.3610834499999998,
+            "p(99)": 7.13609518,
+            "max": 81.066708
+        },
+        "vus": {
+            "value": 7,
+            "min": 0,
+            "max": 82
+        },
+        "http_reqs": {
+            "count": 655072,
+            "rate": 5459.007689567238
+        },
+        "iteration_duration": {
+            "max": 93.523334,
+            "avg": 0.9747499157146008,
+            "min": 0.159584,
+            "med": 0.552833,
+            "p(90)": 1.5551166000000014,
+            "p(95)": 2.834768449999999,
+            "p(99)": 8.044573179999997
+        },
+        "data_received": {
+            "count": 129183491,
+            "rate": 1076543.7550897307
+        },
+        "iterations": {
+            "count": 655072,
+            "rate": 5459.007689567238
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 655072,
+            "value": 0
+        },
+        "checks": {
+            "passes": 1965216,
+            "fails": 0,
+            "value": 1
+        },
+        "vus_max": {
+            "min": 100,
+            "max": 172,
+            "value": 172
+        },
+        "http_req_duration{expected_response:true}": {
+            "med": 0.466125,
+            "p(90)": 1.3905369000000005,
+            "p(95)": 2.5646207999999975,
+            "p(99)": 7.490471569999998,
+            "max": 93.429792,
+            "avg": 0.8619094503138407,
+            "min": 0.012375
+        }
+    },
+    "root_group": {
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {},
+        "checks": {
+                "status 200": {
+                    "passes": 655072,
+                    "fails": 0,
+                    "name": "status 200",
+                    "path": "::status 200",
+                    "id": "fad9fa412b86fcb03bee97c80dcd61f1"
+                },
+                "dentro coincide con la lista": {
+                    "name": "dentro coincide con la lista",
+                    "path": "::dentro coincide con la lista",
+                    "id": "ad1ff6d375a530303e51de68156df2c6",
+                    "passes": 655072,
+                    "fails": 0
+                },
+                "incluye la geocerca esperada": {
+                    "name": "incluye la geocerca esperada",
+                    "path": "::incluye la geocerca esperada",
+                    "id": "479da67d464fae7bdd237d7667a85083",
+                    "passes": 655072,
+                    "fails": 0
+                }
+            },
+        "name": ""
+    }
+}

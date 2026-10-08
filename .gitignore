@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Datos crudos de las pruebas de carga (se conservan solo resúmenes y análisis)
+scripts/estres/resultados/**/series.csv
+scripts/estres/resultados/**/docker_stats.csv
+scripts/estres/resultados/**/gc.log

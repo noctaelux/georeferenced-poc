@@ -1,0 +1,356 @@
+nombre,estado,latitud,longitud,radio_km
+Catedral Basílica de Aguascalientes,MX-AGU,21.8820,-102.2960,0.35
+Jardín de San Marcos,MX-AGU,21.8786,-102.3022,0.3
+Cristo Roto de la Presa Calles,MX-AGU,22.1450,-102.4200,2
+Pueblo Mágico Real de Asientos,MX-AGU,22.2380,-102.0890,1
+Pueblo Mágico Calvillo,MX-AGU,21.8460,-102.7180,1.2
+Aeropuerto Internacional de Aguascalientes,MX-AGU,21.7056,-102.3178,1.5
+Estadio Victoria,MX-AGU,21.8810,-102.2752,0.35
+Cerro del Muerto,MX-AGU,21.8400,-102.4000,2
+Tepezalá,MX-AGU,22.2240,-102.1680,1
+Pabellón de Arteaga,MX-AGU,22.1480,-102.2760,1
+Avenida Revolución de Tijuana,MX-BCN,32.5310,-117.0370,0.4
+Estadio Caliente,MX-BCN,32.5072,-117.0103,0.4
+Playas de Tijuana,MX-BCN,32.5280,-117.1180,0.8
+Playas de Rosarito,MX-BCN,32.3440,-117.0550,1
+Valle de Guadalupe,MX-BCN,32.0900,-116.5700,4
+Malecón de Ensenada,MX-BCN,31.8590,-116.6230,0.5
+La Bufadora,MX-BCN,31.7240,-116.7150,0.6
+Observatorio Astronómico Nacional San Pedro Mártir,MX-BCN,31.0444,-115.4637,2
+Malecón de San Felipe,MX-BCN,31.0250,-114.8400,1
+Centro Histórico de Mexicali,MX-BCN,32.6630,-115.4880,0.6
+Marina de Cabo San Lucas,MX-BCS,22.8840,-109.9110,0.5
+Malecón de La Paz,MX-BCS,24.1600,-110.3130,0.6
+Playa Balandra,MX-BCS,24.3220,-110.3260,1
+Pueblo Mágico Todos Santos,MX-BCS,23.4470,-110.2260,1
+Misión de Loreto,MX-BCS,26.0110,-111.3440,0.5
+Iglesia de Santa Bárbara de Santa Rosalía,MX-BCS,27.3390,-112.2690,0.5
+Salinas de Guerrero Negro,MX-BCS,27.9590,-114.0560,1.5
+Centro Histórico de San José del Cabo,MX-BCS,23.0610,-109.6970,0.5
+Reserva de la Biósfera Sierra de la Laguna,MX-BCS,23.5500,-109.9800,5
+Pueblo de Mulegé,MX-BCS,26.8900,-111.9820,0.8
+Catedral de Campeche,MX-CAM,19.8458,-90.5365,0.4
+Fuerte de San Miguel,MX-CAM,19.8335,-90.5560,0.3
+Zona Arqueológica de Edzná,MX-CAM,19.5960,-90.2290,1
+Zona Arqueológica de Calakmul,MX-CAM,18.1050,-89.8110,2
+Zona Arqueológica de Becán,MX-CAM,18.5180,-89.4650,1
+Zona Arqueológica de Xpujil,MX-CAM,18.5080,-89.3940,0.6
+Malecón de Ciudad del Carmen,MX-CAM,18.6450,-91.8300,0.6
+Champotón,MX-CAM,19.3500,-90.7210,0.8
+Pueblo Mágico Palizada,MX-CAM,18.2560,-92.0910,0.8
+Escárcega,MX-CAM,18.6100,-90.7420,1
+Zona Arqueológica de Palenque,MX-CHP,17.4840,-92.0460,1
+Cascadas de Agua Azul,MX-CHP,17.2580,-92.1150,0.8
+Cascada de Misol-Ha,MX-CHP,17.3920,-92.0000,0.5
+Cañón del Sumidero,MX-CHP,16.8400,-93.0800,2
+Catedral de San Cristóbal de las Casas,MX-CHP,16.7370,-92.6380,0.4
+La Pila de Chiapa de Corzo,MX-CHP,16.7070,-93.0120,0.4
+Lagos de Montebello,MX-CHP,16.1100,-91.6800,3
+Zona Arqueológica de Bonampak,MX-CHP,16.7040,-91.0650,1
+Parque Central de Tapachula,MX-CHP,14.9060,-92.2630,0.6
+Parque de la Marimba de Tuxtla Gutiérrez,MX-CHP,16.7543,-93.1236,0.4
+Zoológico Miguel Álvarez del Toro,MX-CHP,16.7290,-93.0930,0.5
+Catedral de Chihuahua,MX-CHH,28.6355,-106.0763,0.4
+Divisadero Barrancas del Cobre,MX-CHH,27.5300,-107.8260,2
+Pueblo Mágico Creel,MX-CHH,27.7520,-107.6350,1
+Cascada de Basaseachi,MX-CHH,28.1680,-108.2080,1
+Zona Arqueológica de Paquimé,MX-CHH,30.3690,-107.9480,0.8
+Puente Internacional Paso del Norte,MX-CHH,31.7470,-106.4870,0.4
+Mina La Prieta de Hidalgo del Parral,MX-CHH,26.9330,-105.6650,0.8
+Delicias,MX-CHH,28.1910,-105.4710,1
+Médanos de Samalayuca,MX-CHH,31.3500,-106.4800,5
+Ciudad Cuauhtémoc,MX-CHH,28.4050,-106.8660,1.5
+Catedral Metropolitana,MX-DIF,19.4346,-99.1332,0.25
+Palacio de Bellas Artes,MX-DIF,19.4352,-99.1412,0.25
+Ángel de la Independencia,MX-DIF,19.4270,-99.1677,0.3
+Castillo de Chapultepec,MX-DIF,19.4204,-99.1819,0.3
+Basílica de Guadalupe,MX-DIF,19.4847,-99.1176,0.4
+Estadio Azteca,MX-DIF,19.3029,-99.1505,0.5
+Biblioteca Central de Ciudad Universitaria,MX-DIF,19.3340,-99.1870,0.6
+Embarcadero Nativitas de Xochimilco,MX-DIF,19.2564,-99.0948,0.8
+Museo Frida Kahlo,MX-DIF,19.3551,-99.1625,0.3
+Aeropuerto Internacional Benito Juárez,MX-DIF,19.4363,-99.0721,1.2
+Ex Convento del Desierto de los Leones,MX-DIF,19.3130,-99.3110,1.2
+Autódromo Hermanos Rodríguez,MX-DIF,19.4042,-99.0907,0.7
+Catedral de Saltillo,MX-COA,25.4232,-100.9925,0.4
+Museo del Desierto,MX-COA,25.4120,-100.9720,0.5
+Área de Protección Cuatro Ciénegas,MX-COA,26.9300,-102.1000,4
+Pueblo Mágico Parras de la Fuente,MX-COA,25.4400,-102.1810,1.5
+Cristo de las Noas,MX-COA,25.5335,-103.4618,0.4
+Monclova,MX-COA,26.9070,-101.4210,1
+Puente Internacional de Piedras Negras,MX-COA,28.7060,-100.5110,0.5
+Bosque Monterreal en Sierra de Arteaga,MX-COA,25.3830,-100.6180,1.5
+Centro de Ciudad Acuña,MX-COA,29.3240,-100.9320,0.8
+Volcán de Fuego de Colima,MX-JAL,19.5140,-103.6200,2
+Catedral de Colima,MX-COL,19.2430,-103.7250,0.3
+Pueblo Mágico Comala,MX-COL,19.3210,-103.7590,0.6
+Escultura del Pez Vela de Manzanillo,MX-COL,19.0520,-104.3150,0.4
+Laguna de Cuyutlán,MX-COL,18.9500,-104.1000,3
+Tecomán,MX-COL,18.9100,-103.8750,1
+Zona Arqueológica La Campana,MX-COL,19.2580,-103.7230,0.4
+Playa Boca de Pascuales,MX-COL,18.8070,-103.9620,0.6
+Laguna La María,MX-COL,19.4680,-103.6950,0.6
+Armería,MX-COL,18.9370,-103.9630,0.8
+Catedral de Durango,MX-DUR,24.0240,-104.6705,0.3
+Cerro del Mercado,MX-DUR,24.0450,-104.6620,0.6
+Zona del Silencio,MX-DUR,26.6800,-103.7500,6
+Puente de Ojuela,MX-DUR,25.8030,-103.7990,0.6
+Centro de Gómez Palacio,MX-DUR,25.5650,-103.4970,0.6
+Ciudad Lerdo,MX-DUR,25.5400,-103.5230,0.6
+El Salto Pueblo Nuevo,MX-DUR,23.7800,-105.3600,1.2
+Parque Natural Mexiquillo,MX-DUR,23.6800,-105.6200,2
+Santiago Papasquiaro,MX-DUR,25.0460,-105.4180,1
+Nombre de Dios,MX-DUR,23.8480,-104.2460,0.8
+Teatro Juárez,MX-GUA,21.0170,-101.2564,0.25
+Museo de las Momias de Guanajuato,MX-GUA,21.0193,-101.2635,0.25
+Parroquia de San Miguel Arcángel,MX-GUA,20.9145,-100.7438,0.4
+Santuario de Atotonilco,MX-GUA,20.9890,-100.7860,0.5
+Parroquia de Dolores Hidalgo,MX-GUA,21.1570,-100.9340,0.5
+Arco de la Calzada de León,MX-GUA,21.1175,-101.6808,0.3
+Zona Arqueológica de Plazuelas,MX-GUA,20.4700,-101.7300,0.8
+Cristo Rey del Cubilete,MX-GUA,20.9356,-101.3647,0.6
+Bola del Agua de Celaya,MX-GUA,20.5260,-100.8160,0.4
+Pueblo Mágico Mineral de Pozos,MX-GUA,21.2210,-100.5000,0.6
+Ex Convento de Yuriria,MX-GUA,20.2100,-101.1340,0.8
+Clavadistas de La Quebrada,MX-GRO,16.8460,-99.9140,0.3
+Catedral de Acapulco,MX-GRO,16.8510,-99.9100,0.3
+Templo de Santa Prisca de Taxco,MX-GRO,18.5570,-99.6050,0.3
+Grutas de Cacahuamilpa,MX-GRO,18.6680,-99.5060,1
+Playa La Ropa de Zihuatanejo,MX-GRO,17.6300,-101.5530,0.6
+Zona Hotelera de Ixtapa,MX-GRO,17.6630,-101.6110,0.8
+Centro de Chilpancingo,MX-GRO,17.5510,-99.5000,0.6
+Bandera Monumental de Iguala,MX-GRO,18.3480,-99.5440,0.5
+Laguna de Coyuca,MX-GRO,16.9500,-100.0800,2.5
+Aeropuerto Internacional de Acapulco,MX-GRO,16.7570,-99.7540,1
+Reloj Monumental de Pachuca,MX-HID,20.1270,-98.7320,0.3
+Estadio Hidalgo,MX-HID,20.1040,-98.7560,0.4
+Pueblo Mágico Real del Monte,MX-HID,20.1390,-98.6730,0.6
+Prismas Basálticos de Huasca,MX-HID,20.2420,-98.5600,0.5
+Grutas de Tolantongo,MX-HID,20.6497,-98.9983,0.8
+Zona Arqueológica de Tula,MX-HID,20.0640,-99.3410,0.6
+Parque Nacional El Chico,MX-HID,20.1900,-98.7200,2
+Pueblo Mágico Huichapan,MX-HID,20.3760,-99.6500,0.6
+Catedral de Tulancingo,MX-HID,20.0840,-98.3640,0.5
+Ixmiquilpan,MX-HID,20.4860,-99.2180,0.6
+Catedral de Guadalajara,MX-JAL,20.6767,-103.3475,0.3
+Hospicio Cabañas,MX-JAL,20.6770,-103.3383,0.3
+Estadio Akron,MX-JAL,20.6817,-103.4627,0.5
+El Parián de Tlaquepaque,MX-JAL,20.6400,-103.3110,0.4
+Pueblo Mágico Tequila,MX-JAL,20.8820,-103.8370,0.8
+Malecón de Chapala,MX-JAL,20.2930,-103.1900,0.6
+Malecón de Puerto Vallarta,MX-JAL,20.6100,-105.2330,0.5
+Pueblo Mágico Mazamitla,MX-JAL,19.9150,-103.0200,0.8
+Zona Arqueológica Guachimontones,MX-JAL,20.6950,-103.8370,0.6
+Basílica de San Juan de los Lagos,MX-JAL,21.2470,-102.3310,0.4
+Bosque La Primavera,MX-JAL,20.6500,-103.5500,4
+Basílica de Zapopan,MX-JAL,20.7210,-103.3910,0.3
+Pirámide del Sol de Teotihuacán,MX-MEX,19.6925,-98.8438,1.2
+Nevado de Toluca,MX-MEX,19.1080,-99.7580,2
+Cosmovitral de Toluca,MX-MEX,19.2900,-99.6560,0.3
+Embarcadero de Valle de Bravo,MX-MEX,19.1920,-100.1330,0.6
+Zona Arqueológica de Malinalco,MX-MEX,18.9480,-99.4950,0.5
+Museo Nacional del Virreinato,MX-MEX,19.7140,-99.2230,0.4
+Paso de Cortés,MX-MEX,19.0880,-98.6510,1
+Torres de Ciudad Satélite,MX-MEX,19.5080,-99.2340,0.3
+Aeropuerto Internacional Felipe Ángeles,MX-MEX,19.7560,-99.0150,2.5
+Universidad Autónoma Chapingo,MX-MEX,19.4930,-98.8840,0.6
+Catedral de Morelia,MX-MIC,19.7024,-101.1924,0.3
+Acueducto de Morelia,MX-MIC,19.6990,-101.1800,0.3
+Plaza Vasco de Quiroga de Pátzcuaro,MX-MIC,19.5140,-101.6090,0.4
+Isla de Janitzio,MX-MIC,19.5740,-101.6510,0.4
+Yácatas de Tzintzuntzan,MX-MIC,19.6260,-101.5720,0.5
+Santuario de la Mariposa Monarca El Rosario,MX-MIC,19.5947,-100.2675,1
+Volcán Paricutín,MX-MIC,19.4930,-102.2510,1.5
+Parque Nacional Barranca del Cupatitzio,MX-MIC,19.4220,-102.0700,0.6
+Catedral Inconclusa de Zamora,MX-MIC,19.9850,-102.2830,0.4
+Pueblo Mágico Tlalpujahua,MX-MIC,19.8050,-100.1730,0.5
+Palacio de Cortés de Cuernavaca,MX-MOR,18.9210,-99.2340,0.3
+Pirámide del Tepozteco,MX-MOR,18.9963,-99.0927,0.5
+Zona Arqueológica de Xochicalco,MX-MOR,18.8040,-99.2960,0.8
+Parque Las Estacas,MX-MOR,18.7340,-99.1130,0.6
+Laguna de Tequesquitengo,MX-MOR,18.6150,-99.2600,1.5
+Centro de Cuautla,MX-MOR,18.8120,-98.9550,0.5
+Centro Vacacional Oaxtepec,MX-MOR,18.9060,-98.9670,0.6
+Pueblo Mágico Tlayacapan,MX-MOR,18.9560,-98.9810,0.5
+Zona Arqueológica de Chalcatzingo,MX-MOR,18.6770,-98.7700,0.6
+Jojutla,MX-MOR,18.6150,-99.1800,0.6
+Catedral de Tepic,MX-NAY,21.5080,-104.8950,0.3
+Pueblo de Sayulita,MX-NAY,20.8690,-105.4410,0.5
+Fuerte de la Contaduría de San Blas,MX-NAY,21.5410,-105.2870,0.5
+Nuevo Vallarta,MX-NAY,20.6950,-105.2950,1
+Laguna de Santa María del Oro,MX-NAY,21.3600,-104.5700,1.2
+Volcán Ceboruco,MX-NAY,21.1250,-104.5080,2
+Pueblo Mágico Jala,MX-NAY,21.1000,-104.4370,0.5
+Rincón de Guayabitos,MX-NAY,21.0230,-105.2700,0.5
+Zona Arqueológica Los Toriles,MX-NAY,21.0373,-104.3824,0.5
+Macroplaza de Monterrey,MX-NLE,25.6690,-100.3100,0.4
+Cerro de la Silla,MX-NLE,25.6330,-100.2350,1.5
+Parque Fundidora,MX-NLE,25.6780,-100.2840,0.6
+Estadio BBVA,MX-NLE,25.6690,-100.2445,0.4
+Estadio Universitario de San Nicolás,MX-NLE,25.7230,-100.3120,0.4
+Parque Ecológico Chipinque,MX-NLE,25.6140,-100.3580,1.2
+Grutas de García,MX-NLE,25.8060,-100.6190,0.6
+Cascada Cola de Caballo,MX-NLE,25.3702,-100.1621,0.5
+Escalada en Potrero Chico,MX-NLE,25.9500,-100.4750,0.8
+Aeropuerto Internacional de Monterrey,MX-NLE,25.7785,-100.1069,1.2
+Templo de Santo Domingo de Guzmán,MX-OAX,17.0657,-96.7232,0.3
+Zona Arqueológica de Monte Albán,MX-OAX,17.0436,-96.7679,0.8
+Zona Arqueológica de Mitla,MX-OAX,16.9260,-96.3600,0.6
+Hierve el Agua,MX-OAX,16.8660,-96.2760,0.6
+Árbol del Tule,MX-OAX,17.0466,-96.6355,0.3
+Playa Zicatela de Puerto Escondido,MX-OAX,15.8550,-97.0560,0.6
+Bahía de Santa Cruz de Huatulco,MX-OAX,15.7600,-96.1310,0.6
+Pueblo de Mazunte,MX-OAX,15.6680,-96.5540,0.5
+Juchitán de Zaragoza,MX-OAX,16.4330,-95.0200,0.8
+Teotitlán del Valle,MX-OAX,17.0300,-96.5200,0.5
+Huautla de Jiménez,MX-OAX,18.1310,-96.8430,0.6
+Catedral de Puebla,MX-PUE,19.0427,-98.1983,0.3
+Gran Pirámide de Cholula,MX-PUE,19.0575,-98.3020,0.5
+Pueblo Mágico Cuetzalan,MX-PUE,20.0180,-97.5220,0.6
+Africam Safari,MX-PUE,18.9370,-98.1350,0.8
+Fuertes de Loreto y Guadalupe,MX-PUE,19.0570,-98.1890,0.4
+Pueblo Mágico Atlixco,MX-PUE,18.9080,-98.4360,0.6
+Pueblo Mágico Chignahuapan,MX-PUE,19.8390,-98.0300,0.6
+Reloj Floral de Zacatlán,MX-PUE,19.9330,-97.9600,0.5
+Pico de Orizaba,MX-PUE,19.0300,-97.2690,2.5
+Centro de Tehuacán,MX-PUE,18.4640,-97.3930,0.8
+Ex Convento de Huejotzingo,MX-PUE,19.1590,-98.4070,0.4
+Acueducto de Querétaro,MX-QUE,20.5940,-100.3750,0.4
+Templo de San Francisco de Querétaro,MX-QUE,20.5930,-100.3920,0.3
+Cerro de las Campanas,MX-QUE,20.5940,-100.4110,0.4
+Peña de Bernal,MX-QUE,20.7470,-99.9450,0.8
+Pueblo Mágico Tequisquiapan,MX-QUE,20.5210,-99.8900,0.5
+Misión de Jalpan de Serra,MX-QUE,21.2180,-99.4730,0.5
+Jardín Botánico de Cadereyta,MX-QUE,20.6930,-99.8160,0.5
+Centro de San Juan del Río,MX-QUE,20.3880,-99.9960,0.8
+Aeropuerto Intercontinental de Querétaro,MX-QUE,20.6170,-100.1860,1.2
+Zona Arqueológica de Tulum,MX-ROO,20.2140,-87.4310,0.4
+Zona Arqueológica de Cobá,MX-ROO,20.4950,-87.7360,0.8
+Quinta Avenida de Playa del Carmen,MX-ROO,20.6280,-87.0760,0.4
+Mercado 28 de Cancún,MX-ROO,21.1620,-86.8280,0.4
+Aeropuerto Internacional de Cancún,MX-ROO,21.0365,-86.8770,1.2
+Fuerte de San Felipe de Bacalar,MX-ROO,18.6770,-88.3920,0.6
+Boulevard Bahía de Chetumal,MX-ROO,18.4980,-88.2980,0.6
+Centro de San Miguel de Cozumel,MX-ROO,20.5080,-86.9480,0.6
+Parque Xcaret,MX-ROO,20.5800,-87.1200,0.6
+Zona Arqueológica de Kohunlich,MX-ROO,18.4190,-88.7900,0.6
+Felipe Carrillo Puerto,MX-ROO,19.5800,-88.0450,0.8
+Catedral de San Luis Potosí,MX-SLP,22.1520,-100.9760,0.3
+Pueblo Mágico Real de Catorce,MX-SLP,23.6890,-100.8870,0.6
+Jardín Surrealista Las Pozas de Xilitla,MX-SLP,21.3970,-98.9930,0.5
+Cascada de Tamul,MX-SLP,21.8000,-99.1900,0.6
+Sótano de las Golondrinas,MX-SLP,21.5990,-99.0990,0.4
+Cascadas de Micos,MX-SLP,22.0890,-99.1550,0.6
+Centro de Matehuala,MX-SLP,23.6480,-100.6440,1
+Manantial de la Media Luna,MX-SLP,21.8600,-100.0250,0.6
+Parque Tangamanga I,MX-SLP,22.1300,-101.0050,0.8
+Monumento al Pescador de Mazatlán,MX-SIN,23.2210,-106.4200,0.4
+Catedral de Mazatlán,MX-SIN,23.1990,-106.4230,0.3
+Catedral de Culiacán,MX-SIN,24.8050,-107.3940,0.3
+Jardín Botánico de Culiacán,MX-SIN,24.8190,-107.4030,0.3
+Pueblo Mágico El Fuerte,MX-SIN,26.4190,-108.6200,0.6
+Puerto de Topolobampo,MX-SIN,25.6000,-109.0500,0.8
+Pueblo Mágico Cosalá,MX-SIN,24.4120,-106.6900,0.5
+Pueblo Mágico El Rosario,MX-SIN,22.9900,-105.8560,0.5
+Pueblo Mágico Mocorito,MX-SIN,25.4820,-107.9200,0.5
+Presa Sanalona,MX-SIN,24.8100,-107.1500,1.5
+Catedral de Hermosillo,MX-SON,29.0729,-110.9559,0.3
+Bahía de Kino,MX-SON,28.8220,-111.9400,0.8
+Cerro Tetakawi de San Carlos,MX-SON,27.9530,-111.0580,0.6
+Malecón de Guaymas,MX-SON,27.9230,-110.8960,0.5
+Pueblo Mágico Álamos,MX-SON,27.0270,-108.9400,0.6
+Malecón de Puerto Peñasco,MX-SON,31.3040,-113.5460,0.6
+Cráter El Elegante del Pinacate,MX-SON,31.8550,-113.4800,3
+Garita DeConcini de Nogales,MX-SON,31.3330,-110.9420,0.4
+Pueblo Mágico Magdalena de Kino,MX-SON,30.6280,-110.9620,0.5
+Cananea,MX-SON,30.9860,-110.2910,1
+Parque Museo La Venta,MX-TAB,18.0000,-92.9330,0.4
+Catedral del Señor de Tabasco,MX-TAB,17.9800,-92.9280,0.3
+Zona Arqueológica de Comalcalco,MX-TAB,18.2800,-93.2010,0.6
+Reserva Pantanos de Centla,MX-TAB,18.4500,-92.6500,3
+Pueblo Mágico Tapijulapa,MX-TAB,17.4600,-92.7760,0.5
+Grutas del Coconá,MX-TAB,17.5620,-92.9310,0.5
+Puerto Dos Bocas,MX-TAB,18.4250,-93.1800,1
+Tenosique,MX-TAB,17.4730,-91.4230,0.8
+Cárdenas,MX-TAB,17.9970,-93.3760,0.8
+Plaza de Armas de Tampico,MX-TAM,22.2160,-97.8580,0.3
+Playa Miramar de Ciudad Madero,MX-TAM,22.2650,-97.7950,0.8
+Paseo Méndez de Ciudad Victoria,MX-TAM,23.7360,-99.1460,0.6
+Puente Internacional de Matamoros,MX-TAM,25.8820,-97.5040,0.4
+Puente Internacional I de Nuevo Laredo,MX-TAM,27.4990,-99.5070,0.4
+Plaza Principal de Reynosa,MX-TAM,26.0920,-98.2770,0.5
+Reserva de la Biósfera El Cielo,MX-TAM,23.0490,-99.1550,2
+Pueblo Mágico Tula,MX-TAM,22.9940,-99.7200,0.6
+Ciudad Mante,MX-TAM,22.7430,-98.9720,0.8
+Ex Convento de San Francisco de Tlaxcala,MX-TLA,19.3170,-98.2370,0.3
+Zona Arqueológica de Cacaxtla,MX-TLA,19.2440,-98.3390,0.5
+Basílica de Ocotlán,MX-TLA,19.3220,-98.2290,0.25
+Parque Nacional La Malinche,MX-TLA,19.2310,-98.0320,2.5
+Pueblo Mágico Huamantla,MX-TLA,19.3130,-97.9230,0.6
+Santuario de las Luciérnagas de Nanacamilpa,MX-TLA,19.4900,-98.5370,1.2
+Centro de Apizaco,MX-TLA,19.4130,-98.1410,0.6
+Calpulalpan,MX-TLA,19.5880,-98.5690,0.6
+Pueblo Mágico Tlaxco,MX-TLA,19.6140,-98.1200,0.5
+Zona Arqueológica de El Tajín,MX-VER,20.4480,-97.3780,0.8
+Pueblo Mágico Papantla,MX-VER,20.4560,-97.3240,0.5
+Malecón de Veracruz,MX-VER,19.2000,-96.1370,0.4
+Museo de Antropología de Xalapa,MX-VER,19.5520,-96.9270,0.4
+Catedral de Xalapa,MX-VER,19.5280,-96.9230,0.3
+Pueblo Mágico Coatepec,MX-VER,19.4530,-96.9610,0.5
+Palacio de Hierro de Orizaba,MX-VER,18.8510,-97.1000,0.4
+Pueblo Mágico Tlacotalpan,MX-VER,18.6150,-95.6590,0.5
+Laguna de Catemaco,MX-VER,18.4210,-95.1110,0.8
+Salto de Eyipantla,MX-VER,18.3880,-95.2050,0.5
+Zona Arqueológica de Cempoala,MX-VER,19.4440,-96.4040,0.5
+Cofre de Perote,MX-VER,19.4920,-97.1500,2
+El Castillo de Chichén Itzá,MX-YUC,20.6843,-88.5678,0.8
+Zona Arqueológica de Uxmal,MX-YUC,20.3600,-89.7710,0.6
+Catedral de Mérida,MX-YUC,20.9668,-89.6238,0.3
+Monumento a la Patria de Paseo de Montejo,MX-YUC,20.9970,-89.6170,0.4
+Convento de San Antonio de Padua de Izamal,MX-YUC,20.9310,-89.0180,0.4
+Cenote Zací de Valladolid,MX-YUC,20.6920,-88.1990,0.4
+Zona Arqueológica de Ek Balam,MX-YUC,20.8910,-88.1360,0.5
+Reserva de Celestún,MX-YUC,20.8590,-90.3950,0.8
+Muelle de Progreso,MX-YUC,21.2800,-89.6650,0.6
+Zona Arqueológica de Dzibilchaltún,MX-YUC,21.0920,-89.5960,0.5
+Zona Arqueológica de Mayapán,MX-YUC,20.6300,-89.4600,0.5
+Catedral de Zacatecas,MX-ZAC,22.7760,-102.5720,0.3
+Cerro de la Bufa,MX-ZAC,22.7800,-102.5640,0.35
+Mina El Edén,MX-ZAC,22.7790,-102.5800,0.3
+Zona Arqueológica La Quemada,MX-ZAC,22.4560,-102.8180,0.8
+Pueblo Mágico Jerez,MX-ZAC,22.6480,-102.9910,0.6
+Pueblo Mágico Sombrerete,MX-ZAC,23.6350,-103.6400,0.6
+Santuario de Plateros,MX-ZAC,23.2266,-102.8381,0.4
+Convento de Guadalupe,MX-ZAC,22.7470,-102.5180,0.4
+Pueblo Mágico Pinos,MX-ZAC,22.2970,-101.5770,0.5
+Presa La Boca de Santiago,MX-NLE,25.4300,-100.1300,1
+Linares,MX-NLE,24.8590,-99.5670,0.8
+Museo Nacional de Antropología,MX-DIF,19.4260,-99.1863,0.25
+Monumento a la Revolución,MX-DIF,19.4361,-99.1547,0.3
+Plaza de las Tres Culturas,MX-DIF,19.4510,-99.1370,0.3
+Cerro de la Estrella,MX-DIF,19.3420,-99.0890,0.8
+Estadio Jalisco,MX-JAL,20.7050,-103.3270,0.4
+Pueblo Mágico Tapalpa,MX-JAL,19.9450,-103.7590,0.8
+Aeropuerto Internacional de Guadalajara,MX-JAL,20.5218,-103.3110,1.2
+Barra de Navidad,MX-JAL,19.2030,-104.6810,0.6
+Nevado de Colima,MX-JAL,19.5630,-103.6090,2
+Coatzacoalcos,MX-VER,18.1480,-94.4550,0.6
+Tuxpan,MX-VER,20.9550,-97.4000,0.8
+Córdoba,MX-VER,18.8940,-96.9340,0.6
+Zona Arqueológica de Yaxchilán,MX-CHP,16.8990,-90.9640,1
+Comitán de Domínguez,MX-CHP,16.2510,-92.1340,0.6
+Puerto Morelos,MX-ROO,20.8480,-86.8750,0.5
+Akumal,MX-ROO,20.3960,-87.3150,0.5
+Zona Arqueológica de Muyil,MX-ROO,20.0780,-87.6100,1
+Las Coloradas,MX-YUC,21.6080,-87.9900,1
+Río Lagartos,MX-YUC,21.5960,-88.1580,0.8
+Grutas de Loltún,MX-YUC,20.2530,-89.4560,0.5
+Ex Convento de Cuitzeo,MX-MIC,19.9690,-101.1410,0.6
+Puerto de Lázaro Cárdenas,MX-MIC,17.9440,-102.1800,1
+Iztaccíhuatl,MX-MEX,19.1790,-98.6420,2
+Santuario de Chalma,MX-MEX,18.9290,-99.4330,0.4
+Pueblo Mágico Metepec,MX-MEX,19.2530,-99.6050,0.5
+Estadio Cuauhtémoc,MX-PUE,19.0780,-98.1650,0.4
+Teziutlán,MX-PUE,19.8170,-97.3590,0.6
+Zona Arqueológica de Yagul,MX-OAX,16.9580,-96.4280,0.5
+Tuxtepec,MX-OAX,18.0880,-96.1230,0.8

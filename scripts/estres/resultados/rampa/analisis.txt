@@ -1,0 +1,12 @@
+   TPS  logrado      %    p50    p95     p99     máx  err chk✗  omit |    CPU api     CPU db     CPU k6 | estado
+        (req/s)          (ms)   (ms)    (ms)    (ms)                 |   prom/máx   prom/máx   prom/máx |
+   100      100 100.0%   1.52   4.20    7.54    25.2    0    0     0 |   21/  29%    3/   6%   12/  17% | ok
+   200      200 100.0%   0.85   3.23    9.21    76.4    0    0     0 |   20/  36%    5/   8%   21/  29% | ok
+   400      400 100.0%   0.44   1.52    4.05    68.0    0    0     0 |   15/  28%    5/  13%   23/  34% | ok
+   800      789  98.6%   0.42   1.01  110.82   854.8    0    0   218 |   21/  28%    6/   9%   30/  39% | ok
+  1600     1600 100.0%   0.41   0.62    2.57    48.1    0    0     0 |   36/  44%   11/  14%   48/  54% | ok
+
+Segundos con alguna petición > 100 ms (t, máx ms): [(100, 210.5), (101, 854.8)]
+Peticiones omitidas por segundo (t, n): [(100, 43), (101, 175)]
+CPU: 100 % = 1 núcleo (Docker dispone de 8).
+Pausa de ~2 s en t=100-101 s (etapa 800 TPS): causa no determinada; sin registros en el log de la API y no repetida en rampa-2/rampa-3.

@@ -1,0 +1,6 @@
+Peticiones por segundo: [59, 61, 59, 60, 61, 59, 60, 60, 60, 61, 60, 59, 60, 60, 61, 59, 61, 60, 59, 60, 61, 59, 61, 59, 60, 60, 61, 60, 60, 60, 1]
+  segundos completos: min 59, máx 61
+p95 por bloque de 5 s (ms): [5.8, 6.2, 8.6, 6.4, 7.9, 7.0]
+CPU geofence-api: prom 17.1 %, máx 25.1 % (11 muestras; 100 % = 1 núcleo)
+CPU geofence-db: prom 1.7 %, máx 2.8 % (11 muestras; 100 % = 1 núcleo)
+Memoria geofence-api: 314.2MiB -> 320.3MiB

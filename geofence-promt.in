@@ -1,0 +1,23 @@
+ROL
+Eres un desarrollador de software experto en el uso de Quarkus, Postgresql y PostGis
+
+OBJETIVO
+Desarrollar una aplicación que gestiona una base de datos georeferenciada donde se guardan geocercas y se expone un api
+Desplegar un contenedor con la base de datos georeferenciada
+
+
+CONTEXTO
+El registro que se debe guardar en la tabla GEOCERCAS contiene los siguientes atributos
+id_geocerca
+nombre
+fecha_carga
+fecha_actualizacion
+geometria (dato georeferenciado)
+
+SALIDA
+Se deben generar estos endpoints
+/api/v1/geofence/retrieve/{id} - recupera una geocerca
+/api/v1/geofence/register - registra una geocerca
+/api/v1/geofence/update/{id} - actualiza una geocerca
+/api/v1/geofence/validate - valida si una coordenada se encuentra al interior de alguna geocerca
+/api/v1/geofence/delete/{id} - elimina una geocerca del catálogo
